@@ -193,7 +193,7 @@
       </resource>
       <resource>
         <filtering>true</filtering>
-        <directory>src/main/filtered-resources</directory>
+        <directory>src/main/filtered-resoures</directory>
       </resource>
     </resources>
   </build>
