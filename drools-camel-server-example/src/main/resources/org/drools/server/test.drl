@@ -17,12 +17,20 @@
 package  org.drools.server;
 
 declare Message
-    text : String
+    text : String  
+    number: int  
 end
     
 query "get All Messages"
     $m : Message()	
 end    
+
+rule "blop" dialect "mvel"
+when
+    $m : Message(number > 42)
+then
+    $m.text = "ROCK N ROLL:" + $m.text;
+end
 
 rule "echo" dialect "mvel"
 when
