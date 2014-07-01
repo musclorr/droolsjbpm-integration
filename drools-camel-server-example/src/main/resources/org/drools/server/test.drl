@@ -29,12 +29,12 @@ rule "blop" dialect "mvel"
 when
     $m : Message(number > 42)
 then
-    $m.text = "ROCK N ROLL:" + $m.text;
+    //$m.text = "ROCK N ROLL:" + $m.text;
 end
 
 rule "echo" dialect "mvel"
 when
     $m : Message()
 then
-    $m.text = "echo:" + $m.text;
+    //$m.text = "echo:" + $m.text;
 end
