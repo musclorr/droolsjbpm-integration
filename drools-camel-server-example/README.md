@@ -26,10 +26,10 @@ Global variables (see kie:set-global in knowledge service) are:
 - instantiated by default in stateful mode
 - for stateless mode
 the input needs a set-global item:
-    	
-	<set-global identifier="list" out="true">
-    <list />
-    </set-global>
+
+    &lt;set-global identifier="list" out="true">
+    &lt;list />
+    &lt;/set-global>
       
 Returning Matching rules:
 
